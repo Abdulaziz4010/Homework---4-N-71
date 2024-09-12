@@ -155,3 +155,21 @@
 // }
 
 // 10-masala
+
+let n = 27;
+let current = 1;
+let darajasi = false;
+
+while (current <= n) {
+  if (current === n) {
+    darajasi = true;
+    break;
+  }
+  current = current + current + current;
+
+  if (darajasi) {
+    console.log(n + " 3 ning darajasi.");
+  } else {
+    console.log(n + " 3 ning darajasi emas.");
+  }
+}
